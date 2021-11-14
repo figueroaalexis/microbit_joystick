@@ -43,7 +43,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) < 510 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -51,7 +51,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) < 115 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -59,7 +59,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -67,7 +67,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -75,7 +75,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) < 510)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -83,7 +83,7 @@ basic.forever(function () {
             . . # . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) < 115)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -91,7 +91,7 @@ basic.forever(function () {
             . . . . .
             . . # . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 530 && pins.analogReadPin(AnalogPin.P2) <= 760)) {
         basic.showLeds(`
             . . . . .
             . . # . .
@@ -99,7 +99,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             . . # . .
             . . . . .
@@ -107,7 +107,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) < 510)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -115,7 +115,7 @@ basic.forever(function () {
             . . . # .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) < 115)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -123,7 +123,7 @@ basic.forever(function () {
             . . . . .
             . . . . #
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) < 510 && (pins.analogReadPin(AnalogPin.P2) > 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
         basic.showLeds(`
             . . . . .
             . # . . .
@@ -131,7 +131,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) < 115 && (pins.analogReadPin(AnalogPin.P2) > 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             # . . . .
             . . . . .
@@ -139,7 +139,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
         basic.showLeds(`
             . . . . .
             . . . # .
@@ -147,7 +147,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             . . . . #
             . . . . .
@@ -155,7 +155,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) < 510 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) < 510)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -163,13 +163,77 @@ basic.forever(function () {
             . # . . .
             . . . . .
             `)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) < 115 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) < 115)) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
             . . . . .
             . . . . .
             . . . . .
             # . . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
+        basic.showLeds(`
+            . . . . .
+            # . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
+        basic.showLeds(`
+            . # . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
+        basic.showLeds(`
+            . . . # .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
+        basic.showLeds(`
+            . . . . .
+            . . . . #
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . #
+            . . . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . # .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . # . . .
+            `)
+    } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            # . . . .
+            . . . . .
             `)
     } else {
         basic.showLeds(`
