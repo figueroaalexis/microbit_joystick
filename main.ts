@@ -44,7 +44,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("CC")
+        radio.sendString("m")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
@@ -53,7 +53,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("LL")
+        radio.sendString("l")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
@@ -62,7 +62,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("LH")
+        radio.sendString("k")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
@@ -71,7 +71,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("RL")
+        radio.sendString("n")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
         basic.showLeds(`
             . . . . .
@@ -80,7 +80,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("RH")
+        radio.sendString("o")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
@@ -89,7 +89,7 @@ basic.forever(function () {
             . . # . .
             . . . . .
             `)
-        radio.sendString("DL")
+        radio.sendString("r")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
@@ -98,7 +98,7 @@ basic.forever(function () {
             . . . . .
             . . # . .
             `)
-        radio.sendString("DH")
+        radio.sendString("w")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 530 && pins.analogReadPin(AnalogPin.P2) <= 760)) {
         basic.showLeds(`
             . . . . .
@@ -107,7 +107,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("UL")
+        radio.sendString("h")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             . . # . .
@@ -116,7 +116,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("UH")
+        radio.sendString("c")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
@@ -125,7 +125,7 @@ basic.forever(function () {
             . . . # .
             . . . . .
             `)
-        radio.sendString("RDL")
+        radio.sendString("s")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
@@ -134,7 +134,7 @@ basic.forever(function () {
             . . . . .
             . . . . #
             `)
-        radio.sendString("RDH")
+        radio.sendString("y")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
         basic.showLeds(`
             . . . . .
@@ -143,7 +143,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("LUL")
+        radio.sendString("g")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             # . . . .
@@ -152,7 +152,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("LUH")
+        radio.sendString("a")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
         basic.showLeds(`
             . . . . .
@@ -161,7 +161,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("RUL")
+        radio.sendString("i")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             . . . . #
@@ -170,7 +170,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("RUH")
+        radio.sendString("e")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
@@ -179,7 +179,7 @@ basic.forever(function () {
             . # . . .
             . . . . .
             `)
-        radio.sendString("LDL")
+        radio.sendString("q")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
@@ -188,7 +188,7 @@ basic.forever(function () {
             . . . . .
             # . . . .
             `)
-        radio.sendString("LDH")
+        radio.sendString("u")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
         basic.showLeds(`
             . . . . .
@@ -197,7 +197,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("LHUL")
+        radio.sendString("f")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             . # . . .
@@ -206,7 +206,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("LLUH")
+        radio.sendString("b")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
         basic.showLeds(`
             . . . # .
@@ -215,7 +215,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("RLUH")
+        radio.sendString("d")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
         basic.showLeds(`
             . . . . .
@@ -224,7 +224,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        radio.sendString("RHUL")
+        radio.sendString("j")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
@@ -233,7 +233,7 @@ basic.forever(function () {
             . . . . #
             . . . . .
             `)
-        radio.sendString("RHDL")
+        radio.sendString("t")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
@@ -242,7 +242,7 @@ basic.forever(function () {
             . . . . .
             . . . # .
             `)
-        radio.sendString("RLDH")
+        radio.sendString("x")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
         basic.showLeds(`
             . . . . .
@@ -251,7 +251,7 @@ basic.forever(function () {
             . . . . .
             . # . . .
             `)
-        radio.sendString("LLDH")
+        radio.sendString("v")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
         basic.showLeds(`
             . . . . .
@@ -260,7 +260,7 @@ basic.forever(function () {
             # . . . .
             . . . . .
             `)
-        radio.sendString("LHDL")
+        radio.sendString("p")
     } else {
         basic.showLeds(`
             # # # # #
