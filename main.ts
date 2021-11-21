@@ -1,27 +1,17 @@
 WSJoyStick.onKey(KEY.F, function () {
     radio.sendString("F")
-    basic.showString("F")
-    WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Sixteenth))
 })
 WSJoyStick.onKey(KEY.A, function () {
     radio.sendString("A")
-    basic.showString("A")
-    WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Sixteenth))
 })
 WSJoyStick.onKey(KEY.E, function () {
     radio.sendString("E")
-    basic.showString("E")
-    WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Sixteenth))
 })
 WSJoyStick.onKey(KEY.D, function () {
     radio.sendString("D")
-    basic.showString("D")
-    WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Sixteenth))
 })
 WSJoyStick.onKey(KEY.B, function () {
     radio.sendString("B")
-    basic.showString("B")
-    WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Sixteenth))
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "A") {
@@ -30,236 +20,59 @@ radio.onReceivedString(function (receivedString) {
 })
 WSJoyStick.onKey(KEY.C, function () {
     radio.sendString("C")
-    basic.showString("C")
-    WSJoyStick.PlayMusic(262, music.beat(BeatFraction.Sixteenth))
 })
 WSJoyStick.JoyStickInit()
 radio.setGroup(1)
 basic.forever(function () {
     if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . # . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("m")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . # . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("l")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            # . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("k")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . # .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("n")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 510 && pins.analogReadPin(AnalogPin.P2) < 530)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . #
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("o")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . # . .
-            . . . . .
-            `)
         radio.sendString("r")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . # . .
-            `)
         radio.sendString("w")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) > 530 && pins.analogReadPin(AnalogPin.P2) <= 760)) {
-        basic.showLeds(`
-            . . . . .
-            . . # . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("h")
     } else if (pins.analogReadPin(AnalogPin.P1) > 510 && pins.analogReadPin(AnalogPin.P1) < 530 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
-        basic.showLeds(`
-            . . # . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("c")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . # .
-            . . . . .
-            `)
         radio.sendString("s")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . #
-            `)
         radio.sendString("y")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
-        basic.showLeds(`
-            . . . . .
-            . # . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("g")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
-        basic.showLeds(`
-            # . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("a")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
-        basic.showLeds(`
-            . . . . .
-            . . . # .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("i")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
-        basic.showLeds(`
-            . . . . #
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("e")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . # . . .
-            . . . . .
-            `)
         radio.sendString("q")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            # . . . .
-            `)
         radio.sendString("u")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
-        basic.showLeds(`
-            . . . . .
-            # . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("f")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
-        basic.showLeds(`
-            . # . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("b")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) >= 760 && pins.analogReadPin(AnalogPin.P2) < 1024)) {
-        basic.showLeds(`
-            . . . # .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("d")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) >= 530 && pins.analogReadPin(AnalogPin.P2) < 760)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . #
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
         radio.sendString("j")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 760 && pins.analogReadPin(AnalogPin.P1) < 1024 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . #
-            . . . . .
-            `)
         radio.sendString("t")
     } else if (pins.analogReadPin(AnalogPin.P1) >= 530 && pins.analogReadPin(AnalogPin.P1) < 760 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . # .
-            `)
         radio.sendString("x")
     } else if (pins.analogReadPin(AnalogPin.P1) > 115 && pins.analogReadPin(AnalogPin.P1) <= 510 && (pins.analogReadPin(AnalogPin.P2) > 0 && pins.analogReadPin(AnalogPin.P2) <= 115)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . # . . .
-            `)
         radio.sendString("v")
     } else if (pins.analogReadPin(AnalogPin.P1) > 0 && pins.analogReadPin(AnalogPin.P1) <= 115 && (pins.analogReadPin(AnalogPin.P2) > 115 && pins.analogReadPin(AnalogPin.P2) <= 510)) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            # . . . .
-            . . . . .
-            `)
         radio.sendString("p")
     } else {
         basic.showLeds(`
